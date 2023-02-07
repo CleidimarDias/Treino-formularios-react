@@ -58,11 +58,13 @@ function App() {
   
   return (
     <div className="App">      
-      <Box
-      component="form" onSubmit={handleSubmit}
-      backgroundColor='yellow'
+      <Box display="flex" flexDirection="column" justifyContent="center"
+      alignItems="flex-start"
+      flex="1"
+        component="form" onSubmit={handleSubmit}
+      // backgroundColor='yellow'
       sx={{
-        '& > :not(style)': { m: 1, width: '40ch' },        
+        '& > :not(style)': { m: 1, width: '30ch' },        
         
       }}
       noValidate
